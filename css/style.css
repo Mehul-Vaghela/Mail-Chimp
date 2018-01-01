@@ -1,0 +1,170 @@
+body .notifyjs-corner {
+    bottom: 0;
+    top: auto !important;
+    right: 0 !important;
+}
+.notify_block.warning h4 {
+    color: #fff;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.notify_block.warning {
+    background: #4D525B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    float: left;
+    margin: 10px;
+    padding: 15px;
+    width: 400px;
+    position: relative;
+}
+
+.notify_block p {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.alert_text {
+    display: block;
+    float: left;
+    width: 320px;
+}
+
+.notify_block .icon {
+    color: #ffffff;
+    float: left;
+    font-size: 34px;
+    height: 50px;
+    text-align: center;
+    width: 45px;
+}
+
+.notify_block .cross_icon {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    opacity: 0.5;
+}
+
+.notify_block.warning.danger {
+    background: #4D525B;
+    color: #fff;
+}
+
+.notify_block.warning.update {
+    background: #4D525B;
+    color: #fff;
+}
+
+.notify_block.warning.info {
+    background: #4D525B;
+    color: #fff;
+}
+.mailchimp-lists ul {
+    list-style-type: none;
+}
+
+.table-title{
+    text-align: center;
+}
+.list-title{
+    text-align: left;
+    padding: 10px 0 10px 0;
+    color: white;
+    background-color:#4D525B66;
+}
+.list-row{
+    padding: 10px 0 10px 0;
+}
+.list-body h4{
+    display: inline;
+    padding-right: 10px;
+}
+.list-data-display{
+    padding: 10px 0 10px 0;
+}
+.list-data-display a{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 6px 0 6px 0;
+    color: white;
+    background-color: rgba(255, 190, 214, 0.94);
+}
+
+
+/*--------- Loader css ---------*/
+
+.load-bar {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: 6px;
+    background-color: #4D525B;
+}
+
+.bar {
+    content: "";
+    display: inline;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 50%;
+    text-align: center;
+}
+
+.bar:nth-child(1) {
+    background-color: #cccccc;
+    animation: loading 3s linear infinite;
+}
+
+.bar:nth-child(2) {
+    background-color: #4D525B;
+    animation: loading 3s linear 1s infinite;
+}
+
+@keyframes loading {
+    from {
+        left: 50%;
+        width: 0;
+        z-index: 100;
+    }
+    33.3333% {
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    to {
+        left: 0;
+        width: 100%;
+    }
+}
+
+.inner_page .load-bar.inner_loader {
+    background-color: rgba(239, 239, 239, 0.8);
+    cursor: wait;
+    height: 100%;
+    margin-top: 0;
+    position: fixed !important;
+    top: 0;
+}
+
+.inner_loader .bar {
+    height: 6px;
+}
+
+.inner_loader .bar:nth-child(1) {
+    background: #fff none repeat scroll 0 0;
+}
