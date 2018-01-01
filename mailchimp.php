@@ -6,7 +6,7 @@
  * Time: 7:28 PM
  */
 require 'functions.php';
-$user_email='mgvaghela31@gmail.com';
+$user_email='user_email';
 $get_method_params = $_POST['Method'];
 $function_obj = new functions();
 if ($get_method_params == 'getMailchimpLists') {

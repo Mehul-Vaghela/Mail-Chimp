@@ -8,7 +8,7 @@ $(document).ready(function () {
     checkEmailSubcription();
 });
 
-var user_email='vaghelamehul12345@gmail.com';
+var user_email='user_email_test';
 
 function checkEmailSubcription() {
     var complete_url = location.protocol + '//' + location.hostname + '/mailchimp.php';
