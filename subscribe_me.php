@@ -6,13 +6,13 @@
  * Time: 11:09 AM
  */
 
-$apiKey = '5c75d433cc6b2eecf898f41a68ff05b6-us17';
-$user_email='mgvaghela31@gmail.com';
+$apiKey = 'Your mailchimp api key';
+$user_email='Email to be subcribe';
 $request_type='PUT';
 $userid = md5(strtolower($user_email));
 $post_data['user_email']=$user_email;
 
-$list_id='0333088506';//Id of the list customers
+$list_id='12321432';//Id of the list customers
 $url_params='lists/'.$list_id.'/members/' . $userid;
 $dataCenter = substr($apiKey,strpos($apiKey,'-')+1);
 $url = 'https://' . $dataCenter . '.api.mailchimp.com/3.0/'.$url_params;

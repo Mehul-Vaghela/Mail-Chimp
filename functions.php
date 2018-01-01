@@ -73,7 +73,7 @@ class functions
 
     public function request_to_mailchimp_api($url_params,$request_type,$request_about,$post_data){
 
-        $apiKey = '5c75d433cc6b2eecf898f41a68ff05b6-us17';
+        $apiKey = 'Your Mailchimp-api key';
         $dataCenter = substr($apiKey,strpos($apiKey,'-')+1);
         $url = 'https://' . $dataCenter . '.api.mailchimp.com/3.0/'.$url_params;
         $auth = base64_encode( 'user:'. $apiKey );
